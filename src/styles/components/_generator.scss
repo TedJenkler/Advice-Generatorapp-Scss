@@ -7,7 +7,8 @@
     padding: 2.5rem 1.5rem 4rem 1.5rem;
     background-color: $darkgreyblue;
     width: 21.438rem;
-    height: 19.688rem;
+    max-height: 19.688rem;
+
     border-radius: 0.625rem;
 
     h1 {
@@ -15,7 +16,7 @@
         font-weight: 800;
         font-size: 0.688rem;
         word-spacing: 0.21625rem;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
     }
 
     p {
@@ -24,7 +25,7 @@
         font-size: 1.5rem;
         word-spacing: -0.01625rem;
         text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
     }
 
     #deco {
@@ -36,9 +37,26 @@
         bottom: -2rem;
         height: 4rem;
         width: 4rem;
-        border-radius: 100%;
+        border-radius: 50%;
+        cursor: pointer;
         &:hover {
             box-shadow: 0 0 0.5rem 0.25rem rgba(83, 255, 170, 0.25);
+        }
+    }
+}
+
+@include respond-to('xl') {
+    .generator {
+        width: 33.75rem;
+        max-height: 20.75rem;
+
+        h1 {
+            font-size: 0.8125rem;
+            word-spacing: 0.256875rem;
+        }
+        p {
+            font-size: 1.75rem;
+            word-spacing: -0.01875rem;
         }
     }
 }

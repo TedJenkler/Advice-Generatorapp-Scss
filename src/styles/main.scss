@@ -1,5 +1,6 @@
-@import './utils.scss/variables';
+@import './utils/variables';
+@import './utils/breakpoints';
 
 @import './components/generator';
 
-@import './base/index'
+@import './base/index';
